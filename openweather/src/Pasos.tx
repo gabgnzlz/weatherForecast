@@ -5,3 +5,9 @@ Componente Form
 4º Crearemos la funcion onSubmit, le asignaremos un parametro que en este caso es la ciudad que estamos buscando. 
 Nota: PreventDefault es para evitar que se recargue la página.
 Ahora para visualizar el estado, se llamará la variable city
+
+Componente WeatherPanel
+1º Llamar a la API desde la pagina https://openweathermap.org/current#name
+2º Crear una variable urlWeather donde llamaremos a la api y pegar el link (este link tendrá algunas modificaciones) https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+3º crearemos otra variable cityUrl donde llamaremos a la citudad con el parametro "q"
+4º Ahora agregaremos la url de la predicción de las siguientes horas, en esta solo cambiaremos en el link del urlWeather la palabra weather por forecast = "https://api.openweathermap.org/data/2.5/forecast?appid=895c445bdaba7ad2e5bf4ef64914fc12&lang=es" 

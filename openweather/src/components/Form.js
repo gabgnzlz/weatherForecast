@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Form = () => {
+const Form = ({newLocation}) => {
 //1º Crearemos estado que hace referencia a la ciudad que vamos a estar buscando
     const [city, setCity] = useState("");
 // Hugs= para establecer la ciudad que estamos buscando. Estado = city; setCity = Funcion que modificará su estado;  useState = lo vamos a establecer como un valor de texto vacio
@@ -9,6 +9,7 @@ const Form = () => {
         e.preventDefault();
         console.log ({city});
         if (city === "" || !city) return;
+        newLocation(city);
     }
 
     return (

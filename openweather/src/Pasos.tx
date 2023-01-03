@@ -11,3 +11,10 @@ Componente WeatherPanel
 2º Crear una variable urlWeather donde llamaremos a la api y pegar el link (este link tendrá algunas modificaciones) https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 3º crearemos otra variable cityUrl donde llamaremos a la citudad con el parametro "q"
 4º Ahora agregaremos la url de la predicción de las siguientes horas, en esta solo cambiaremos en el link del urlWeather la palabra weather por forecast = "https://api.openweathermap.org/data/2.5/forecast?appid=895c445bdaba7ad2e5bf4ef64914fc12&lang=es" 
+5º Ahora declararemos las diferentes variables de usestate: Weather para almacenar la respuesta que nos da la api. el useState sera un array vacio porque es donde tendremos la información
+6º Lo mismo haremos con la predicción 
+7º const [loading, setLoading] = useState(false); Para que mientras se esté cargando la información se vizualice este estado y sepamos que está trabajando. Con un valor booleano
+8º Para visualizar la tarjeta con la infomación, crearemos otro useState: const [show, setShow] = useState(false);
+9º Para visualizar en el formulario 
+
+10º Crearemos la funcion parahacer la llamada a la Api ademas esa funcion va a recoger la informacion de esa ciudad

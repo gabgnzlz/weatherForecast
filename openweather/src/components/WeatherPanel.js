@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Form from './Form';
+import Card from './Card';
+
 const WeatherPanel = () => {
     let urlWeather = "https://api.openweathermap.org/data/2.5/weather?appid=895c445bdaba7ad2e5bf4ef64914fc12&lang=es";
     let cityUrl = "&q=";
@@ -60,6 +62,13 @@ const WeatherPanel = () => {
             newLocation = {getLocation}
         />
 
+        <Card
+            showData = {show}
+            loadingData = {loading}
+            weather = {weather}
+            forecast = {forecast}
+
+        />
         </React.Fragment> 
     )
 

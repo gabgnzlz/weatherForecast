@@ -3,8 +3,11 @@ body{
 }
 
 .App {
-  text-align: center;
-  
+  text-align: center;  
+}
+
+.input-group{
+  width: 60%;
 }
 
 

@@ -1,0 +1,7 @@
+Componente Form
+1º Crearemos estado que hace referencia a la ciudad que vamos a estar buscando
+2º Crearemos un evento onSubmit, que lo que hace es que cuando se actalice ejecutará una funcion
+3º En el input crearemos un evento que se llama onChange para recoger la información que hemos escrito en ese campo. Le vamos a indicar que solo se ejecute en el caso de que pulsemos el boton estableciendo una funcion, dentro de esa funcion lo que modificaremos es el estado de setCity y le vamos a pasar el valor que tiene el campo con e.target.value
+4º Crearemos la funcion onSubmit, le asignaremos un parametro que en este caso es la ciudad que estamos buscando. 
+Nota: PreventDefault es para evitar que se recargue la página.
+Ahora para visualizar el estado, se llamará la variable city
